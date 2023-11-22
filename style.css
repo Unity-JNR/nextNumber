@@ -1,0 +1,93 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:khaki;
+}
+
+.container{
+    text-align: right; 
+}
+
+.next{
+    padding: 20px;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+    background-color: palegoldenrod;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* black Text Color */
+    font-weight: bolder;
+    font-size: large;
+  } 
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"]:focus {
+    border-color: black; /* Dark Pink Border Color on Focus */
+  }
+
+  input[type="number"]:hover {
+    border-color: #ccc;
+  }
+
+  
+
+  input[type="number"] + label {
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: yellow; /* Dark Pink Button Background Color */
+    color: black; /* White Button Text Color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  button:hover {
+    background-color: white; /* Slightly Darker Pink on Hover*/
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      max-width: 800px;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
